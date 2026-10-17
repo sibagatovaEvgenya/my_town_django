@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %} Факты об Уфе - интересное о столице Башкортостана {% endblock%}
+
+{% block content %}
+
+<h2 class="section-title">🔍 Интересные факты об Уфе</h2>
+            
+<div class="card">
+    <ul class="facts-list">
+        <li><span class="fact-icon">🏛️</span> Уфа основана в 1574 году как крепость на месте слияния рек Белой и Уфы.</li>
+        <li><span class="fact-icon">🏙️</span> Один из 16 городов-миллионников России, население превышает 1 144 000 человек.</li>
+        <li><span class="fact-icon">🛢️</span> Крупнейший центр нефтепереработки в России, здесь находится легендарный "Уфимский НПЗ".</li>
+        <li><span class="fact-icon">🎵</span> Родина многих звезд: Земфира, Юрий Шевчук (ДДТ), Владимир Спиваков, Сергей Доренко.</li>
+        <li><span class="fact-icon">🍯</span> Башкирский мёд, произведенный в окрестностях Уфы, признан эталонным во всем мире.</li>
+        <li><span class="fact-icon">📏</span> Протяжённость города с севера на юг — более 50 км, один из самых вытянутых мегаполисов.</li>
+        <li><span class="fact-icon">🏞️</span> В черте города протекают три реки: Белая, Уфа, Дёма.</li>
+        <li><span class="fact-icon">🚉</span> Уфимский вокзал — один из самых красивых и старейших железнодорожных вокзалов в Поволжье (построен в 1888 году).</li>
+    </ul>
+</div>
+            
+ <div class="card" style="text-align: center;">
+    <button id="randomFactBtn" class="btn">✨ Показать случайный факт</button>
+    <div id="randomFactDisplay" style="margin-top: 1.5rem;"></div>
+</div>
+
+{% endblock%}

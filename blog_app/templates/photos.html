@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Исторические фотографии Уфы - старая Уфа {% endblock%}
+
+{% block content %}
+
+<div class="history-subnav">
+    <a href="{% url 'history' %}" class="history-nav-btn active-history">📜 Общая история</a>
+    <a href="{% url 'people' %}" class="history-nav-btn">🌟 Известные жители</a>
+    <a href="{% url 'photos' %}" class="history-nav-btn">📸 Исторические фото</a>
+</div>
+
+<h2 class="section-title">📸 Исторические фотографии Уфы</h2>
+            
+<div class="photos-gallery">
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_villa.jpg' %}" alt="Улица Центральная, 1900 год" >
+        <div class="photo-info">
+            <h4>Улица Центральная</h4>
+            <span class="photo-year">1900 год</span>
+            <p>Вид на главную улицу дореволюционной Уфы, каменные купеческие особняки.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_shopping_malls.jpg' %}" alt="Гостиный двор, 1910">
+        <div class="photo-info">
+            <h4>Гостиный двор</h4>
+            <span class="photo-year">1910 год</span>
+            <p>Торговые ряды в центре Уфы, построенные в XIX веке.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_railway_station.jpg' %}" alt="Железнодорожный вокзал, 1930-е">
+        <div class="photo-info">
+            <h4>Железнодорожный вокзал</h4>
+            <span class="photo-year">1930-е годы</span>
+            <p>Старое здание вокзала станции Уфа, которое было разрушено в годы войны.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_opera.jpg' %}" alt="Театр оперы и балета, 1950">
+        <div class="photo-info">
+            <h4>Театр оперы и балета</h4>
+            <span class="photo-year">1950 год</span>
+            <p>Только что построенное здание Башкирского театра оперы и балета.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_october_avenue.jpg' %}" alt="Центр Уфы, 1965">
+        <div class="photo-info">
+            <h4>Центр Уфы</h4>
+            <span class="photo-year">1965 год</span>
+            <p>Вид на проспект Октября в период активной застройки.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_fountain.jpg' %}" alt="Фонтан на площади, 1973">
+        <div class="photo-info">
+            <h4>Фонтан «Танцующие журавли»</h4>
+            <span class="photo-year">1973 год</span>
+            <p>Был одним из символов города,  гости города фотографировались с ним, а уфимцы с удовольствием гуляли вокруг</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_salavat_yulaev.jpg' %}" alt="Памятник Салавату Юлаеву, 1980">
+        <div class="photo-info">
+            <h4>Памятник Салавату Юлаеву</h4>
+            <span class="photo-year">1980 год</span>
+            <p>Символ Уфы и Республики Башкортостан, установленный на высоком берегу Белой.</p>
+        </div>
+    </div>
+
+    <div class="photo-card">
+        <img src="{% static 'img/history/Ufa_bridge.jpg' %}" alt="Уфа, 1990-е">
+        <div class="photo-info">
+            <h4>Уфа в 70-е годы</h4>
+            <span class="photo-year">1970 год</span>
+            <p>Вид на городскую набережную и строящиеся новые жилые кварталы.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

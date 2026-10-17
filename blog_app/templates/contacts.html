@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %} Главная | Уфа - столица Башкортостана {% endblock%}
+
+{% block content %}
+
+<h2 class="section-title">📞 Важные телефоны городских служб Уфы</h2>
+<p><em>Кликните на номер, чтобы скопировать.</em></p>
+
+<div class="contact-section">
+    <h3 class="contact-category">🚨 Экстренные службы</h3>
+    <table class="contact-table">
+        <tr><th>Служба</th><th>Телефон</th></tr>
+        <tr><td>Единый номер вызова экстренных служб</td><td class="phone-number">112</td></tr>
+        <tr><td>Пожарная охрана и МЧС</td><td class="phone-number">101</td></tr>
+        <tr><td>Полиция</td><td class="phone-number">102</td></tr>
+        <tr><td>Скорая медицинская помощь</td><td class="phone-number">103</td></tr>
+        <tr><td>Аварийная газовая служба</td><td class="phone-number">104</td></tr>                    
+    </table>
+</div>
+
+<div class="contact-section">
+    <h3 class="contact-category">🏢 Администрация и ЖКХ</h3>
+    <table class="contact-table">
+        <tr><th>Организация</th><th>Телефон</th></tr>
+        <tr><td>Приёмная Главы Администрации Уфы</td><td class="phone-number">+7 (347) 279-01-00</td></tr>
+        <tr><td>Единая диспетчерская служба ЖКХ</td><td class="phone-number">+7 (347) 279-10-10</td></tr>
+        <tr><td>Управление гражданской защиты</td><td class="phone-number">+7 (347) 251-33-33</td></tr>
+        <tr><td>Аварийно-восстановительная служба (водоканал)</td><td class="phone-number">+7 (347) 216-33-33</td></tr>
+        <tr><td>Горэлектросеть (аварийная)</td><td class="phone-number">+7 (347) 286-31-11</td></tr>
+    </table>
+</div>
+            
+<div class="contact-section">
+    <h3 class="contact-category">🏛️ Медицина и социальная поддержка</h3>
+    <table class="contact-table">
+        <tr><th>Учреждение</th><th>Телефон</th></tr>
+        <tr><td>Справочная служба больниц Уфы</td><td class="phone-number">122</td></tr>
+        <tr><td>Горячая линия по коронавирусу</td><td class="phone-number">+7 (347) 286-22-22</td></tr>
+        <tr><td>Социальная защита населения</td><td class="phone-number">+7 (347) 279-12-34</td></tr>
+    </table>
+</div>
+
+<div class="contact-section">
+    <h3 class="contact-category">🚌 Транспорт и справочные</h3>
+    <table class="contact-table">
+        <tr><th>Служба</th><th>Телефон</th></tr>
+        <tr><td>Справочная автобусного вокзала</td><td class="phone-number">+7 (347) 272-30-30</td></tr>
+        <tr><td>Диспетчерская электротранспорта (трамвай/троллейбус)</td><td class="phone-number">+7 (347) 251-02-88</td></tr>
+        <tr><td>Горячая линия по вопросам благоустройства</td><td class="phone-number">+7 (347) 279-10-00</td></tr>
+    </table>
+</div>
+<div class="card" style="background:#fef5e8;">
+    <p>⚠️ Внимание: Все номера актуальны для города Уфы. При экстренной ситуации всегда звоните <strong>112</strong> (с мобильного телефона).</p>
+</div>
+                
+
+{% endblock%}
